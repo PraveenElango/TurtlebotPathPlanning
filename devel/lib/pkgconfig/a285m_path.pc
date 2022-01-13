@@ -1,0 +1,8 @@
+prefix=/home/praveen/a285m_path_ws/devel
+
+Name: a285m_path
+Description: Description of a285m_path
+Version: 0.0.0
+Cflags: -I/home/praveen/a285m_path_ws/src/a285m_path/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs nav_msgs geometry_msgs std_msgs

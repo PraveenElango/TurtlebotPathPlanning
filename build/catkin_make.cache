@@ -1,0 +1,2 @@
+a285m_path:rotate_robot
+-DCATKIN_DEVEL_PREFIX=/home/praveen/a285m_path_ws/devel -DCMAKE_INSTALL_PREFIX=/home/praveen/a285m_path_ws/install -G Unix Makefiles

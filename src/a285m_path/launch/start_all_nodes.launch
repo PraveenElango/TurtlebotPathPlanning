@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="a285m_path" type="range_detect_node"
+    name="range_detect_node" output="screen" launch-prefix="gnome-terminal --command"/>
+    <node pkg="a285m_path" type="path_plan_node" name="path_plan_node"
+    output="screen" launch-prefix="gnome-terminal --command"/>
+    <node pkg="a285m_path" type="bot_control_node" name="bot_control_node"
+    output="screen" launch-prefix="gnome-terminal --command"/>
+    <node pkg="a285m_path" type="pos_control_node" name="pos_control_node"
+    output="screen" launch-prefix="gnome-terminal --command"/>
+    <rosparam command="load" file="$(find a285m_path)/config/config.yaml"/>
+    <rosparam command="load" file="$(find a285m_path)/config/pos_config.yaml"/>
+</launch>
